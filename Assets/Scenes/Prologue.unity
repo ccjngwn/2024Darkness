@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 1.6168213, y: 94.0874}
+  m_AnchoredPosition: {x: 1.6171875, y: 94.0874}
   m_SizeDelta: {x: -48.6726, y: 52.4252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469270021
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &533746324
 Canvas:
   m_ObjectHideFlags: 0
@@ -416,7 +416,7 @@ Canvas:
   m_GameObject: {fileID: 533746321}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -439,7 +439,7 @@ RectTransform:
   m_GameObject: {fileID: 533746321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.010672382, y: 0.010672382, z: 0.010672382}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 734144755}
@@ -448,8 +448,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 648.88885}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &734144754
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,25 +506,19 @@ MonoBehaviour:
   prologueImage: {fileID: 1617468283}
   dialogText: {fileID: 469270021}
   fadeGroup: {fileID: 734144757}
-  prologueImages:
-  - {fileID: 21300000, guid: 1d33894d331799547bed4a56cfc833b5, type: 3}
-  - {fileID: 21300000, guid: d5a432952a8664440823a04c93b1272d, type: 3}
-  - {fileID: 21300000, guid: 184ca9679b9b6324d91eee31f83beda4, type: 3}
-  - {fileID: 21300000, guid: 6f9a9c8cc83beca4aa7841555385d684, type: 3}
-  - {fileID: 21300000, guid: 6984723a340c2d5449bfdb4193253993, type: 3}
-  - {fileID: 21300000, guid: 385f628140b0f934c8747bd104dfba33, type: 3}
-  - {fileID: 21300000, guid: 932de73ecbdd074438acbafac0b8a1f5, type: 3}
-  - {fileID: 21300000, guid: fa5e32f259c208f4290e21e5649adbd8, type: 3}
   prologueDialogs:
-  - This is First Page
-  - This is Second Page
-  - This is Third Page
-  - This is Fouth Page
-  - This is Fifth Page
-  - This is Sixth Page
-  - This is Sevneth Page
-  - This is Eight Page
+  - image: {fileID: 21300000, guid: 1d33894d331799547bed4a56cfc833b5, type: 3}
+    dialogs:
+    - 'me : 111'
+    - ddd111
+  - image: {fileID: 21300000, guid: d5a432952a8664440823a04c93b1272d, type: 3}
+    dialogs:
+    - edf222
+    - werw222
+  - image: {fileID: 0}
+    dialogs: []
   typingSpeed: 0.12
+  fadeDuration: 1
 --- !u!225 &734144757
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -670,7 +664,7 @@ RectTransform:
   m_GameObject: {fileID: 1617468281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9988, y: 1.9988, z: 1.9988}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 734144755}
